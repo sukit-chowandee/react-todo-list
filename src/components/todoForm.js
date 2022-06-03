@@ -25,7 +25,7 @@ function TodoForm(props) {
     <form className="todo-form" onSubmit={handleSubmit}>
       <input
         type={"text"}
-        placeholder={props.edit ? " Update you item" : "Add a todo"}
+        placeholder={props.edit ? "Update a todo" : "Add a todo"}
         autoComplete="off"
         value={input}
         name={"text"}
@@ -34,7 +34,7 @@ function TodoForm(props) {
         ref={inputRef}
       />
       <button className={props.edit ? "todo-button edit" : "todo-button"}>
-        {props.edit ? "Update" : "Add todo"}
+        {props.edit ? "Update" : "Add"}
       </button>
     </form>
   );
